@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:  hsl(225, 100%, 94%);
+    text-align: center;;
+    
+    
+}
+
+.bgimage{
+   background: url("./images/pattern-background-mobile.svg") no-repeat center/cover;
+   height: 400px;
+   position: absolute;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right:0;
+   z-index: -2;
+}
+.container{
+  background-color: white;
+  width: 400px;
+
+  border-radius: 10px;
+  box-shadow:3px 3px 3px hsl(228,45%,44%,0.15) ;
+  margin: 50px auto;
+
+  
+
+}
+.hero{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.Annual{
+    font-weight: bold;
+    font-size: 20px;
+}
+.music{
+padding: 10px;
+width: 5em;
+}
+
+h1{
+    text-align: center;
+    color:hsl(223, 47%, 23%)
+}
+.para{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 15px;
+    width:300px;
+    margin-left: 50px;
+}
+.inner-container {
+    margin: 30px auto 20px;
+    background-color:hsl(225, 100%, 98%);
+    width:80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content:space-between;
+   
+}
+.Annual{
+    padding: 10px;
+}
+article{
+    display: flex;
+    justify-self: center;
+    justify-content:space-between;
+    padding: 5px;
+}
+.btn{
+ border: none;
+ padding: 5px 10px;
+ border-radius: 10px;
+ font-weight: bold;
+ font-size: 16px;
+ cursor: pointer;
+
+}
+.btn-change{
+    background-color: transparent;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.btn-payment{
+   background-color: hsl(245, 75%, 52%) ;
+   color: white;
+   padding: 10px;
+}
+.btn-order{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    padding: 20px;
+}
+.btn-change:hover,.btn-payment:hover{
+    opacity: 0.7;
+}
+@media (max-width: 1440px)and( min-width:375px) {
+    .bgimage{
+        background:url("./images/pattern-background-desktop.svg")no-repeat center/cover;
+        height:1000vh;
+    }
+    .container{
+        width: 400px;
+    }
+}
